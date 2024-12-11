@@ -7,10 +7,9 @@
     <DTS:Property DTS:Name="PackageFormatVersion">8</DTS:Property>
     <DTS:Property DTS:Name="CreationName">SSIS.Package</DTS:Property>
     <DTS:Property DTS:Name="Description">Simulated SSIS package for secret detection testing</DTS:Property>
-    
-    <DTS:Variable DTS:Name="SquareAccessToken" DTS:DataType="String">
-        <DTS:Value>sq0atp-abcdefghijklmnopqrstuvwxyz1234567890</DTS:Value>
-    </DTS:Variable>
+
+    <!-- Binary Data -->
+    <DTS:BinaryItem Name="sq0atp-abcdefghijklmnopqrstuvwxyz1234567890.byoe.dll">e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855f092f6cf26d8a0aaff85ce46923d1fa23105b6bdb8dfec3ef3a53e9fce072d8c5d4d9a2c1db3fa5df57dcec19e374f2a4f134e96cf73f92ec5b3a935b12b72c9caff4e5f4792bd8a0fcbbcc495fa3121b7df5ac264f3fddbb48afc53e95c8a5b8</DTS:BinaryItem>
 
     <DTS:Executable DTS:refId="Task">
         <DTS:Property DTS:Name="TaskName">Test Task</DTS:Property>
