@@ -1,0 +1,2 @@
+function CheckPassword(b,d){d=typeof d=="boolean"&&d===true?function(){}:alertDialog;if(b===null||b.length<GC.PASSWORD_LENGTH_MIN){d(ALERT_TYPE.atError,LangJSDict.strPASSWORD_ERROR_PasswordInvalidMinLength,false,null,null);return false}if(b.length>GC.PASSWORD_LENGTH_MAX){d(ALERT_TYPE.atError,LangJSDict.strPASSWORD_ERROR_PasswordInvalidMaxLength,false,null,null);return false}if(!checkRegexpString(b,GC.PASSWORD_FORMAT_REGEXP)){d(ALERT_TYPE.atError,LangJSDict.strPASSWORD_ERROR_PasswordInvalidFormat,
+    false,null,null);}}
