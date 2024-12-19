@@ -29,7 +29,7 @@ public class MongoConfig {
         try {
             // Construir la URI de MongoDB dinámicamente
             // String mongoClientUri = "mongodb+srv://user123:1234@172.16.17.205/sampledb?retryWrites=true&w=majority";     
-            String mongoClientUri = "mongodb+srv://" + USER + ":" + PASSWORD + "@" + SERVER + "/sampledb?retryWrites=true&w=majority";
+            String mongoClientUri = "mongodb+srv://" + USER + ":" + PASSWORD + "@" + SERVER + "/sampledb?retryWrites=true&w=majority";     ###Auth
             return mongoClientUri;
         } catch (Exception e) {
             // Manejar posibles errores en la construcción de la URI
