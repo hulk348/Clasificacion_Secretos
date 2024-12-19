@@ -14,7 +14,7 @@ public class IncidentsDao {
 
     final String URL = "jdbc:oracle:thin:@localhost:1521:ORCL";
     final String authUser = "test_user";
-    final String authPassword = "TestPassword123!"; 
+    final String authPassword = "TestPassword123!";    ###Password
 
     public Connection getConnection() throws Exception {
         return DriverManager.getConnection(URL, authUser, authPassword);
